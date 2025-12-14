@@ -1,0 +1,35 @@
+CREATE TABLE Dishes (
+    IdDishes INT PRIMARY KEY,
+    Name VARCHAR(100),
+    Price DECIMAL(10,2),
+    Category VARCHAR(50),
+    IdRestaurant INT,
+    is_vegan BOOLEAN,
+    FOREIGN KEY (IdRestaurant) REFERENCES Restaurants(IdRestaurant)
+);
+
+INSERT INTO Dishes (IdDishes, Name, Price, Category, IdRestaurant, is_vegan) VALUES
+(1, 'Soupe de légumes orbitale', 90000, 'VEGER', 1, 1),
+(2, 'Salade de quinoa cosmique', 95000, 'VEGER', 2, 1),
+(3, 'Pâtes aux tomates lyophilisées', 85000, 'VEGER', 3, 1),
+(4, 'Omelette aux herbes spatiales', 110000, NULL, 4, 0),
+(5, 'Gratin de pommes de terre stellaire', 100000, 'VEGER', 5, 1),
+(6, 'Poulet rôti basse gravité', 210000, 'VIANDE', 6, 0),
+(7, 'Blanquette de veau intersidérale', 240000, 'VIANDE', 7, 0),
+(8, 'Steak de bœuf galactique', 260000, 'VIANDE', 8, 0),
+(9, 'Magret de canard des étoiles', 230000, 'VOLAILLE', 1, 0),
+(10, 'Cassoulet orbital', 280000, 'VEGER', 2, 1),
+(11, 'Cabillaud vapeur cosmique', 170000, 'POISSON', 3, 0),
+(12, 'Filet de dorade céleste', 185000, 'POISSON', 4, 0),
+(13, 'Thon mi-cuit astral', 200000, 'POISSON', 5, 0),
+(14, 'Crevettes sautées nébuleuse', 195000, 'CRUSTACE', 6, 0),
+(15, 'Bouillabaisse spatiale', 300000, 'POISSON', 7, 0),
+(16, 'Fromage affiné sous vide spatial', 150000, 'LAITIER', 8, 0),
+(17, 'Pain artisanal en apesanteur', 75000, NULL, 1, 0),
+(18, 'Dessert chocolaté zéro gravité', 120000, 'DESSERT', 2, 0),
+(19, 'Tarte aux fruits cosmiques', 140000, 'DESSERT', 3, 0),
+(20, 'Riz au lait lacté lunaire', 100000, 'DESSERT', 4, 0),
+(21, 'Café espresso interstellaire', 50000, 'DESSERT', 5, 0),
+(22, 'Lasagnes végétariennes gravitationnelles', 160000, 'VEGER', 6, 1),
+(23, 'Agneau confit aux épices cosmiques', 270000, 'VIANDE', 7, 0),
+(24, 'Homard bleu de l’espace profond', 350000, 'CRUSTACE', 8, 0);
