@@ -35,5 +35,4 @@ INSERT INTO Dishes (IdDishes, Name, Price, Category, IdRestaurant, is_vegan) VAL
 (24, 'Homard bleu de l''espace profond', 35, 'CRUSTACE', 8, 0);
 
 
-DELETE FROM Dishes
-WHERE Price = NULL
+DELETE FROM Dishes WHERE Price IS NULL;

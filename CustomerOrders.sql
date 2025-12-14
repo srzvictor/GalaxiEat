@@ -12,5 +12,4 @@ INSERT INTO CustomerOrders (IdOrders, IdRestaurant, Total_amount, Customer_name)
 (2, 3, 34.5, 'Marie Martin'),
 (3, 6, 51.5, 'Pierre Durand');
 
-DELETE FROM CustomerOrders
-WHERE Total_amount < 35
+DELETE FROM CustomerOrders WHERE Total_amount < 35;
