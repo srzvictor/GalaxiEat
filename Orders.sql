@@ -8,6 +8,6 @@ CREATE TABLE Orders (
 ALTER TABLE Orders RENAME TO CustomerOrders;
 
 INSERT INTO CustomerOrders (IdOrders, IdRestaurant, Total_amount, Customer_name) VALUES
-(1, 1, 280000, 'Jean Dupont'),
-(2, 3, 340000, 'Marie Martin'),
-(3, 6, 470000, 'Pierre Durand');
+(1, 1, 41, 'Jean Dupont'),
+(2, 3, 34.5, 'Marie Martin'),
+(3, 6, 51.5, 'Pierre Durand');
