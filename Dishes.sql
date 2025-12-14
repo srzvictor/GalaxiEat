@@ -33,3 +33,7 @@ INSERT INTO Dishes (IdDishes, Name, Price, Category, IdRestaurant, is_vegan) VAL
 (22, 'Lasagnes végétariennes gravitationnelles', 16, 'VEGER', 6, 1),
 (23, 'Agneau confit aux épices cosmiques', 27, 'VIANDE', 7, 0),
 (24, 'Homard bleu de l''espace profond', 35, 'CRUSTACE', 8, 0);
+
+
+DELETE FROM Dishes
+WHERE Price = NULL
