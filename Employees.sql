@@ -87,6 +87,8 @@ INSERT INTO Employees (IdEmployees, Firstname, Lastname, Role, IdRestaurant, hir
 (72, 'Julien', 'Masson', 'Serveur', 8, '2123-12-24');
 
 
-SELECT Firtsname
+
+SELECT 
+Lastname
 FROM Employees
-WHERE LastName LIKE '%a%';
+WHERE Lastname like '%A%'

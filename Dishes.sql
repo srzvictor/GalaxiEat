@@ -36,7 +36,7 @@ INSERT INTO Dishes (IdDishes, Name, Price, Category, IdRestaurant, is_vegan) VAL
 
 
 DELETE FROM Dishes
-WHERE Price = NULL
+WHERE Price IS NULL
 
 SELECT Name Price
 FROM Dishes
