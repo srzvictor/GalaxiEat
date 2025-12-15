@@ -14,3 +14,6 @@ INSERT INTO CustomerOrders (IdOrders, IdRestaurant, Total_amount, Customer_name)
 
 DELETE FROM CustomerOrders
 WHERE Total_amount < 35
+
+SELECT SUM(Total_amount) AS Total_Gagne
+FROM CustomerOrders;

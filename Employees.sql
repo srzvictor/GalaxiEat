@@ -85,3 +85,8 @@ INSERT INTO Employees (IdEmployees, Firstname, Lastname, Role, IdRestaurant, hir
 (70, 'Quentin', 'Lopez', 'Serveur', 8, '2123-10-19'),
 (71, 'Camille', 'Arnaud', 'Serveur', 8, '2123-11-16'),
 (72, 'Julien', 'Masson', 'Serveur', 8, '2123-12-24');
+
+
+SELECT Firtsname
+FROM Employees
+WHERE LastName LIKE '%a%';

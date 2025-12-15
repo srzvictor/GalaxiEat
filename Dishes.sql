@@ -37,3 +37,20 @@ INSERT INTO Dishes (IdDishes, Name, Price, Category, IdRestaurant, is_vegan) VAL
 
 DELETE FROM Dishes
 WHERE Price = NULL
+
+SELECT Name Price
+FROM Dishes
+ORDER BY Price DESC
+LIMIT 3
+
+SELECT Name, Price, Category
+FROM Dishes
+ORDER BY Price DESC
+LIMIT 3
+
+SELECT 
+    Category,
+    ROUND(AVG(Price), 2) AS Prix_Moyen
+FROM Dishes
+WHERE Category IS NOT NULL
+GROUP BY Category;
