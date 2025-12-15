@@ -35,4 +35,22 @@ INSERT INTO Dishes (IdDishes, Name, Price, Category, IdRestaurant, is_vegan) VAL
 (24, 'Homard bleu de l''espace profond', 35, 'CRUSTACE', 8, 0);
 
 
-DELETE FROM Dishes WHERE Price IS NULL;
+DELETE FROM Dishes
+WHERE Price IS NULL
+
+SELECT Name Price
+FROM Dishes
+ORDER BY Price DESC
+LIMIT 3
+
+SELECT Name, Price, Category
+FROM Dishes
+ORDER BY Price DESC
+LIMIT 3
+
+SELECT 
+    Category,
+    ROUND(AVG(Price), 2) AS Prix_Moyen
+FROM Dishes
+WHERE Category IS NOT NULL
+GROUP BY Category;
